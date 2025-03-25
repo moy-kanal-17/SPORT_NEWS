@@ -99,3 +99,8 @@ module.exports = {
   updateNews,
   deleteNews,
 };
+
+
+
+
+

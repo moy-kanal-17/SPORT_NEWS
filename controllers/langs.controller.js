@@ -22,7 +22,8 @@ const addNewLang = async (req, res) => {
 const getALLlanguagestypes = async (req, res) => {
   try {
     const results = await pool.query("SELECT * FROM languages");
-    res.send(results.rows[0]);
+    
+    res.send({message:results.rows[0]});
   } catch (error) {
     errorHandler(error, res);
     res.send("Malumot olishda xatolik");
