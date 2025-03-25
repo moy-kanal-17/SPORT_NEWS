@@ -5,7 +5,7 @@ const {
   getNewsWithLangById,
   updateNewsWithLang,
   deleteNewsWithLang,
-} = require("../controllers/NewsWithLangs.controller");
+} = require("../controllers/newsWithLangs.controller");
 
 const router = require("express").Router();
 
