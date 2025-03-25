@@ -26,7 +26,7 @@ const getALLlanguagestypes = async (req, res) => {
     res.send({message:results.rows[0]});
   } catch (error) {
     errorHandler(error, res);
-    res.send("Malumot olishda xatolik");
+    res.send({message:"Malumot olishda xatolik"});
   }
 };
 const getALLlanguagesById = async (req, res) => {
